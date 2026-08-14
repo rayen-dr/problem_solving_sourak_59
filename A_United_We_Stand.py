@@ -1,0 +1,25 @@
+''' اللَّهُمَّ إِنِّي أَسْأَلُكَ مُوجِبَاتِ رَحْمَتِكَ 
+        وَعَزَائِمَ مَغْفِرَتِكَ   
+    وَالسَّلاَمَةَ مِنْ كُلِّ إِثْمٍ
+    والغَنِيمَةَ مِنْ كُلِّ بِرٍّ
+        والفَوْزَ بالجَنَّةِ،
+     والنَّجاةَ مِنَ النَّارِ '''
+
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    mx=max(a)
+    b=[]
+    c=[]
+    for value in a:
+        if value !=mx:
+            b.append(value)
+        else:
+            c.append(value)
+    if len(b)==0:
+        print(-1)
+    else:
+        print(len(b),len(c))
+        print(*b)
+        print(*c)

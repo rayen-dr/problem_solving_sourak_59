@@ -1,0 +1,13 @@
+''' اللَّهُمَّ إِنِّي أَسْأَلُكَ مُوجِبَاتِ رَحْمَتِكَ 
+        وَعَزَائِمَ مَغْفِرَتِكَ   
+    وَالسَّلاَمَةَ مِنْ كُلِّ إِثْمٍ
+    والغَنِيمَةَ مِنْ كُلِّ بِرٍّ
+        والفَوْزَ بالجَنَّةِ،
+     والنَّجاةَ مِنَ النَّارِ '''
+
+n=int(input())
+a=list(map(int,input().split()))
+min_operations=float('inf')
+for i in a:
+    min_operations=min(min_operations,abs(i))
+print(min_operations)

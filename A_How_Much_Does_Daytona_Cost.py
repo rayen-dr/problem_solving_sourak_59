@@ -1,0 +1,20 @@
+''' اللَّهُمَّ إِنِّي أَسْأَلُكَ مُوجِبَاتِ رَحْمَتِكَ 
+        وَعَزَائِمَ مَغْفِرَتِكَ   
+    وَالسَّلاَمَةَ مِنْ كُلِّ إِثْمٍ
+    والغَنِيمَةَ مِنْ كُلِّ بِرٍّ
+        والفَوْزَ بالجَنَّةِ،
+     والنَّجاةَ مِنَ النَّارِ '''
+
+t=int(input())
+for _ in range(t):
+    n,k=map(int,input().split())
+    a=list(map(int,input().split()))
+    number_is_present=False
+    for i in range(n):
+        if a[i]==k:
+            number_is_present=True
+            break
+    if number_is_present:
+        print("YES")
+    else:
+        print("NO")

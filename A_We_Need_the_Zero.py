@@ -1,0 +1,22 @@
+''' اللَّهُمَّ إِنِّي أَسْأَلُكَ مُوجِبَاتِ رَحْمَتِكَ 
+        وَعَزَائِمَ مَغْفِرَتِكَ   
+    وَالسَّلاَمَةَ مِنْ كُلِّ إِثْمٍ
+    والغَنِيمَةَ مِنْ كُلِّ بِرٍّ
+        والفَوْزَ بالجَنَّةِ،
+     والنَّجاةَ مِنَ النَّارِ '''
+
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    tot_xor=0
+    for num in a:
+        tot_xor^=num
+    if n%2==1:
+        print(tot_xor)
+    else:
+        if tot_xor==0:
+            print(tot_xor)
+        else:
+            print(-1)
+            
